@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Lightbox</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <style>
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .image-gallery img {
+      width: 150px;
+      height: 150px;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="image-gallery">
+  <a data-fancybox="gallery" href="https://source.unsplash.com/random/800x600"><img src="https://source.unsplash.com/random/150x150" alt="Image 1"></a>
+  <a data-fancybox="gallery" href="https://source.unsplash.com/random/800x600"><img src="https://source.unsplash.com/random/150x150" alt="Image 2"></a>
+  <!-- Add more images as needed -->
+</div>
+
+<script>
+  $(document).ready(function() {
+    $("[data-fancybox]").fancybox({
+      loop: false, // Disable looping through images
+      infobar: false // Disable info bar
+    });
+  });
+</script>
+
+</body>
+</html>

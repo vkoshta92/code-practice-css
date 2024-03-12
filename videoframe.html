@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video in Frame</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body, html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.background {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.frame-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.frame {
+  position: relative;
+  width: 60vw; /* Adjust the width as needed */
+  height: 50%; /* Adjust the height as needed */
+  /* border: 10px solid #fff;  */
+  overflow: hidden;
+}
+
+.frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#myVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 83%;
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+  
+}
+
+.video-text {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: goldenrod;
+  text-align: center;
+  z-index: 1;
+  font-size: 50px;
+  white-space: nowrap;
+  font-weight:bolder;
+}
+@media (max-width: 1200px) {
+    .background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.frame {
+  position: relative;
+  width: 100vw; /* Adjust the width as needed */
+  height: 50%; /* Adjust the height as needed */
+  /* border: 10px solid #fff;  */
+  overflow: hidden;
+}
+
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="background">
+    <img src="bg.png" alt="Background Image">
+    <div class="frame-container">
+      <div class="frame">
+        <img src="frame.png" alt="Frame Image">
+        <div class="video-container">
+          <video id="myVideo" autoplay loop muted>
+            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+          </video>
+          <div class="video-text">
+            <h2>DISTINTIVE SLOTS</h2>
+            <!-- <p>Additional text goes here</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const video = document.getElementById('myVideo');
+
+// Play the video when the page is loaded
+window.addEventListener('load', function() {
+  video.play();
+});
+// https://gist.github.com/jsturgis/3b19447b304616f18657
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>

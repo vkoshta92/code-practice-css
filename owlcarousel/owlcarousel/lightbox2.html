@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.17/dist/fancybox/fancybox.css"
+          />
+  </head>
+  <style>
+     img {
+        width: 500px; /* Set the width as desired */
+        height: auto; /* Maintain aspect ratio */
+      }
+  </style>
+  <body>
+    <div>
+      <a
+         data-fancybox="gallery"
+         data-src="https://lipsum.app/id/2/1024x768"
+         data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code"
+         >
+        <img src="https://images.unsplash.com/photo-1709770554994-f11ff89b0246?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D" />
+      </a>
+
+      <a data-fancybox="gallery" data-src="https://images.unsplash.com/photo-1709582033127-4f1b2410d47a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D">
+        <img src="https://images.unsplash.com/photo-1709582033127-4f1b2410d47a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D" />
+      </a>
+
+      <a data-fancybox="gallery" data-src="https://images.unsplash.com/photo-1709786704802-d1641c3ad048?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D">
+        <img src="https://images.unsplash.com/photo-1709786704802-d1641c3ad048?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D" />
+      </a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.17/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind('[data-fancybox="gallery"]', {
+        Slideshow: {
+          playOnStart: true,
+        },
+      });    
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
