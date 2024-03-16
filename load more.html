@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load More Images</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>/* Basic styling */
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .image {
+            width: 24%; /* Four images per row */
+            margin: 1%; /* Adjust margin as needed */
+        }
+        
+        #load-more-btn {
+            margin-top: 20px;
+        }
+        </style>
+</head>
+<body>
+    <div class="image-container">
+        <!-- Your initial 100 images go here -->
+        <!-- Each image should have a class "image" -->
+        <!-- For demonstration, I'm just using placeholders -->
+        <!-- Replace the src attribute with your image URLs -->
+        <!-- You can add as many as you need -->
+        <img class="image" src="https://source.unsplash.com/random" alt="Image 1">
+        <img class="image" src="https://source.unsplash.com/random" alt="Image 2">
+        <img class="image" src="https://source.unsplash.com/random" alt="Image 1">
+        <img class="image" src="https://source.unsplash.com/random" alt="Image 2">
+        <img class="image" src="https://source.unsplash.com/random" alt="Image 1">
+        <img class="image" src="https://source.unsplash.com/random" alt="Image 2">
+        <img class="image" src="https://source.unsplash.com/random" alt="Image 1">
+        <img class="image" src="https://source.unsplash.com/random" alt="Image 2">
+        <img class="image" src="https://source.unsplash.com/random" alt="Image 1">
+        <img class="image" src="https://source.unsplash.com/random" alt="Image 2">
+        <img class="image" src="https://source.unsplash.com/random" alt="Image 1">
+        <img class="image" src="https://source.unsplash.com/random" alt="Image 2">
+        <img class="image" src="https://source.unsplash.com/random" alt="Image 1">
+        <img class="image" src="https://source.unsplash.com/random" alt="Image 2">
+        <img class="image" src="https://source.unsplash.com/random" alt="Image 1">
+        <img class="image" src="https://source.unsplash.com/random" alt="Image 2">
+        <img class="image" src="https://source.unsplash.com/random" alt="Image 1">
+        <img class="image" src="https://source.unsplash.com/random" alt="Image 2">
+        <img class="image" src="https://source.unsplash.com/random" alt="Image 1">
+        <img class="image" src="https://source.unsplash.com/random" alt="Image 2">
+        <img class="image" src="https://source.unsplash.com/random" alt="Image 1">
+        <img class="image" src="https://source.unsplash.com/random" alt="Image 2">
+        <img class="image" src="https://source.unsplash.com/random" alt="Image 1">
+        <img class="image" src="https://source.unsplash.com/random" alt="Image 2">
+        
+        <!-- Add more images as needed -->
+    </div>
+    <button id="load-more-btn">Load More</button>
+
+    <!-- <script src="script.js"></script> -->
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const imageContainer = document.querySelector('.image-container');
+    const loadMoreBtn = document.getElementById('load-more-btn');
+
+    let visibleImages = 10; // Initial number of visible images
+    const totalImages = 10; // Total number of images you have
+
+    // Function to load more images
+    function loadMoreImages() {
+        for (let i = visibleImages; i < Math.min(visibleImages + 4, totalImages); i++) {
+            const img = document.createElement('img');
+            img.className = 'image';
+            img.src = 'placeholder.jpg'; // Replace with your image URL
+            img.alt = 'Image ' + (i + 1);
+            imageContainer.appendChild(img);
+        }
+        visibleImages += 4;
+        if (visibleImages >= totalImages) {
+            loadMoreBtn.style.display = 'none'; // Hide button if all images are loaded
+        }
+    }
+
+    // Initially hide the load more button
+    loadMoreBtn.style.display = 'none';
+
+    // Show load more button after initial images are loaded
+    window.addEventListener('load', function() {
+        loadMoreBtn.style.display = 'block';
+    });
+
+    loadMoreBtn.addEventListener('click', loadMoreImages);
+});
+
+    </script>
+</body>
+</html>
