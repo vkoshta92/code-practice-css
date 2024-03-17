@@ -288,4 +288,428 @@ Slideshow: {
 
 
 
-// all pages
+// all phone
+
+/*  slider phone*/
+/* phone */
+
+
+
+
+// .slider {
+//     margin-bottom: 30px;
+//     position: relative;
+//   }
+//   .slider .owl-item.active.center .slider-card {
+//       transform: scale(1.15);
+//     opacity: 1;
+    
+//     /* background: -webkit-linear-gradient(to bottom, #ff5e62, #ff9966);
+//     background: linear-gradient(to bottom, #ff5e62, #ff9966); */
+//     color: #fff;
+//     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3), 0 0 0 2px #fff; 
+    
+//   }
+  
+  
+  
+//     .owl-item.active.center {
+//       position: relative;
+//     }
+//     .mirror-image {
+//       border-radius: 10px;
+//       position: absolute;
+//       bottom: -106%; /* Adjust the value to control the height of the reflection */
+//       left: 0;
+//       width: 40%;
+//       height: 100%;
+//       transform: scaleY(-1);
+//       opacity: 0.3; /* Adjust the base opacity of the reflection */
+//       background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8)); /* Adjust the gradient stops and colors */
+//       pointer-events: none; /* Allow interactions with the content beneath */
+//       display: none; /* Initially hide the mirror image */
+//       visibility: hidden;
+  
+//     }
+  
+  
+//     .slider .owl-item.active.center .slider-card .mirror-image {
+//       visibility: initial;
+//     }
+  
+  
+  
+  
+//   @media (max-width:992px) {
+//   .slider .owl-item.active.center .slider-card {
+//   margin-inline: auto;
+//   }
+  
+  
+//   }
+  
+  
+  
+  
+  
+  
+//   @media (max-width:1500) {
+//       .slider-card {
+//       background: #fff;
+//       padding: 0px 0px;
+//       /* margin: 50px 15px 20px 50px; */
+//       border-radius: 12px;
+//       box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+//       transform: scale(0.2);
+//       opacity: 1;
+//       transition: all 0.3s;
+//       height:430px;
+//       width: 250px;
+//       border: 9px solid white;
+//     }
+  
+//       }
+  
+  
+  
+  
+//   .slider-card img {
+//     width: 100%;
+//     height: 100%;
+//     object-fit:cover; /* Ensure the image covers the entire container while maintaining aspect ratio */
+//     /* box-shadow: 0 10px 20px rgba(184, 160, 160, 0.7), 0 0 0 2px #fff;  */
+//     border-radius: 10px;
+//   }
+  
+  
+  
+//   .owl-nav .owl-prev {
+//     position: absolute;
+//     top: calc(50% - 25px);
+//     left: 0;
+//     opacity: 1;
+//     font-size: 30px !important;
+//     z-index: 99999;
+   
+//   }
+//   .owl-nav .owl-next {
+  
+      
+//     position: absolute;
+//     top: calc(50% - 25px);
+//     right: 0;
+//     opacity: 1;
+//     font-size: 30px !important;
+//     z-index: 9999;
+    
+    
+//   }
+  
+//   .pos .owl-nav .owl-prev{
+//       position: absolute;
+//       top: calc(50% - 25px);
+//       right: 0;
+//       opacity: 1;
+//       font-size: 30px !important;
+//       z-index: 9999;
+      
+//   }
+  
+  
+  
+  
+//   .pos .owl-nav .owl-next {
+  
+//       position: absolute;
+//       top: calc(50% - 25px);
+//       left: 7rem;
+//       opacity: 1;
+//       font-size: 30px !important;
+//       z-index: 99999;
+     
+//     }
+     
+      
+      
+    
+  
+  
+//   .owl-dots {
+//     text-align: center;
+//   }
+//   .owl-dots .owl-dot {
+//     height: 10px;
+//     width: 10px;
+//     border-radius: 10px;
+//     background: #ccc !important;
+//     margin-left: 3px;
+//     margin-right: 3px;
+//     outline: none;
+//     /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 0 0 2px #fff;  */
+//   }
+//   .owl-dots .owl-dot.active {
+//     background: transparent !important;
+//   }
+  
+  
+  
+  
+  
+   
+  
+//   @media (max-width:992px) {
+  
+//       .projects-slides-two.owl-theme .owl-nav [class*=owl-] {
+//           margin: 29px 10px;
+//           padding: 0;
+//           background: 0 0;
+//           color: #000;
+//           border: 2px solid #000;
+//           border-radius: 50%;
+//           -webkit-transition: var(--transition);
+//           transition: var(--transition);
+//           display: inline-block;
+//           width: 55px;
+//           height: 55px;
+//           line-height: 55px;
+//           text-align: center;
+//           font-size: 3.5rem;
+//       }
+     
+//       }
+  
+  
+//   /*  */
+//   /* Add this CSS to style the navigation buttons */
+//   .owl-carousel-1 .owl-nav {
+//       position: absolute;
+//       bottom: 50px; 
+//       width: 28rem;
+//       left: 33%;
+//   }
+//   @media (max-width:700px){
+//       .owl-carousel-1 .owl-nav {
+         
+        
+          
+//           left: 13%;
+//       }
+//   }
+//   @media (max-width:445){
+//       .owl-carousel-1 .owl-nav {
+         
+        
+          
+//           left: 8%;
+//       }
+//   }
+  
+//   .owl-carousel-1 .owl-nav button {
+//       background: #fff;
+//       color: #333;
+//       padding: 10px;
+//       border: none;
+//       cursor: pointer;
+//       font-size: 20px;
+//       transition: background 0.3s, color 0.3s;
+//   }
+//   .owl-carousel-1 .owl-nav .owl-prev::after {
+//     content: "PICTURE PUZZLE";
+//     position: absolute;
+//     left: 60px;
+//     top: 13%;
+//     font-size: 20px;
+//     white-space: nowrap;
+//     font-weight: 700;
+//     z-index: 999999;
+  
+  
+//   }
+  
+  
+//   .owl-carousel-1 .owl-nav .owl-prev {
+//       position: absolute;
+//       top: calc(50% - 25px);
+//       left: 0;
+//       opacity: 1;
+//       font-size: 30px !important;
+//       z-index: 99999;
+     
+//     }
+//     .owl-carousel-1 .owl-nav .owl-next {
+//       position: absolute;
+//       top: calc(50% - 25px);
+//       right: 0;
+//       opacity: 1;
+//       font-size: 30px !important;
+//       z-index: 9999;
+      
+      
+//     }
+  
+  
+  
+//   .owl-carousel-1 .owl-nav button i:hover {
+//       /* background: #333; */
+//       color: skyblue;
+//       border: 2px solid skyblue;
+  
+//   }
+  
+//   /* Add this CSS to style the navigation icons */
+//   .owl-carousel-1 .owl-nav button i {
+//       font-size: 30px !important;
+//       border: 2px solid black;
+      
+//       border-radius: 50%;
+//       padding: 6px 14px;
+//       position: relative;
+//       top:40px;
+//       z-index: 12;
+  
+      
+      
+//   }
+//   .slider-card {
+//       background: #fff;
+  
+//       padding: 0px 0px;
+//       margin: 50px 15px 90px 15px;
+//       /* border-radius: 12px; */
+//       /* box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%); */
+//       transform: scale(0.9);
+//       opacity: 0.5;
+//       transition: all 0.3s;
+//       height:430px;
+//       width: 250px;
+//       /* border: 9px solid transparent; */
+      
+//     }
+    
+  
+//   .my_height{
+//       background-color: green;
+//       height: 100vh;
+//       z-index: -1;
+      
+//   }
+  
+  
+  
+//   /* phone */
+//   .static-frame {
+//       position: relative;
+//       overflow: hidden;
+//   }
+  
+//   .static-frame-overlay {
+//       position: absolute;
+//       top: -3%;
+//       left: 30.5%;
+//       transform: translate(-50%, -50%);
+//       border: 9px solid white !important;
+//       /* background-color: red; */
+//       box-sizing: border-box;
+//       z-index: 1;
+//       height:430px;
+//     width: 250px;
+//     border-radius: 12px;
+//     box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+//     transform: scale(0.9);
+//     /* opacity: 0.5; */
+//     transition: all 0.3s;
+//     height:590px;
+//     width: 340px;
+//     border: 9px solid white;
+//     z-index: 2;
+//   }
+  
+//   @media(max-width:600px){
+      
+//   .static-frame-overlay {
+  
+//       top: -3%;
+//       left: -5%;
+  
+  
+//   }
+//     }
+  
+//   .owl-carousel {
+//       z-index: 1;
+//   }
+  
+//   /*  slider phone*/
+//   /* phone */
+
+
+
+// phone html
+
+// <div class="col-lg-6_new col-md-12 p-0 over_hidden  my_height    ">
+// <div class="dovelopment">
+  
+//       <section id="slider" class="pt-5">
+//         <div class="container">
+       
+//           <div class="slider static-frame ">
+//               <div class="owl-carousel owl-carousel-1 ">
+//                   <div class="slider-card">
+//                       <div class="d-flex justify-content-center align-items-center mb-4 ">
+//                           <img src="assets/images/home-page/phone/1.png" alt="" >
+//                           <!-- <img class="mirror-image" src="assets/images/home-page/phone/1.png" alt="" > -->
+
+//                       </div>
+//                   </div>
+//                   <div class="slider-card">
+//                       <div class="d-flex justify-content-center align-items-center mb-4">
+//                           <img src="assets/images/home-page/phone/2.png" alt="">
+//                           <!-- <img class="mirror-image" src="assets/images/home-page/phone/2.png" alt="" > -->
+
+                          
+
+//                       </div>
+//                   </div>
+//                   <div class="slider-card">
+//                       <div class="d-flex justify-content-center align-items-center mb-4">
+//                           <img src="assets/images/home-page/phone/3.png" alt="">
+//                           <!-- <img class="mirror-image" src="assets/images/home-page/phone/3.png" alt="" > -->
+                          
+//                       </div>
+//                   </div>
+                 
+                 
+    
+//                   <div class="slider-card">
+//                     <div class="d-flex justify-content-center align-items-center mb-4">
+//                         <img src="assets/images/home-page/phone/1.png" alt="">
+//                         <!-- <img class="mirror-image" src="assets/images/home-page/phone/1.png" alt="" > -->
+
+//                     </div>
+//                 </div>
+                
+//                   <!-- <div class="slider-card">
+//                       <div class="d-flex justify-content-center align-items-center mb-4">
+//                           <img src="images/slide-4.jpg" alt="">
+//                       </div>
+//                   </div> -->
+//                   <!-- <div class="slider-card">
+//                       <div class="d-flex justify-content-center align-items-center mb-4">
+//                           <img src="images/slide-5.jpg" alt="">
+//                       </div>
+//                   </div> -->
+//               </div>
+//               <div class="static-frame-overlay"></div>
+//           </div>
+
+          
+
+
+//         </div>
+//       </section>
+
+
+
+
+// </div>
+// </div>
