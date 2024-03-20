@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  #hoverText {
+  position: absolute;
+  display: none; /* Initially hidden */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 5px;
+}
+
+
+    </style>
+</head>
+<body>
+    <video id="myVideo" width="320" height="240" controls>
+        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div id="hoverText"></div>
+      <script>const video = document.getElementById('myVideo');
+        const hoverText = document.getElementById('hoverText');
+        
+        video.addEventListener('mousemove', function(e) {
+          const rect = video.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+        
+          hoverText.style.display = 'block';
+          hoverText.style.left = `${x}px`;
+          hoverText.style.top = `${y}px`;
+          hoverText.innerHTML = "Your hover text here"; // Replace with your desired hover text
+        });
+        
+        video.addEventListener('mouseleave', function() {
+          hoverText.style.display = 'none';
+        });
+        
+      </script>
+      
+</body>
+</html>
