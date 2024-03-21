@@ -20,11 +20,12 @@
 
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+ document.addEventListener('DOMContentLoaded', function() {
         var video = document.getElementById('myVideo');
+        var frame_container=document.querySelector(".frame-container")
         var isMuted = false;
 
-        document.body.addEventListener('click', function() {
+        frame_container.addEventListener('click', function() {
             if (isMuted) {
                 video.muted = false;
                 isMuted = false;
