@@ -1,0 +1,38 @@
+
+
+<div class="frame-container">
+    <div class="frame">
+        <img src="./assets/images/frame.png" alt="Frame Image">
+        <div class="video-container">
+            <video id="myVideo" autoplay loop muted>
+                <source src="assets/images/home-page/myVideo.mp4" type="video/mp4" class="video_main lazyload">
+            </video>
+            <!-- Add mute/unmute button -->
+            <button id="muteButton">Mute/Unmute</button>
+            <!-- End of mute/unmute button -->
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var video = document.getElementById('myVideo');
+        var isMuted = false;
+
+        document.body.addEventListener('click', function() {
+            if (isMuted) {
+                video.muted = false;
+                isMuted = false;
+            } else {
+                video.muted = true;
+                isMuted = true;
+            }
+        });
+    });
+
+</script>
